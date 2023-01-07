@@ -1,3 +1,8 @@
 main {
-
+    width: 135vh;
+    height: 125vh;
+  transform: skew(0deg, -10deg);
+  margin-top: 200px;
+  padding: auto;
+  transform-origin: -100% -50%;
 }

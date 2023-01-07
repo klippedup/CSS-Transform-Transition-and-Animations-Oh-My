@@ -9,6 +9,9 @@
   animation-name: middle;
   animation-duration: .1s;
   animation-fill-mode: forwards;
+  transform: translate(-50px);
+  background: transparent;
+  box-shadow: none;
 }
 
 .hamburger:hover > div:nth-child(3){
@@ -27,17 +30,31 @@ nav {
   opacity: 1;
 }
 
+.hamburger:hover {
+  z-index: auto;
+}
+
 @keyframes top {
-  from {}
-  to {}
+  from {
+    transform: rotate(0deg) 
+  }
+  to {
+    transform: rotate(45deg) translate(20px, 25px)
+  }
 }
 
 @keyframes middle {
-  from {}
-  to {}
-}
+  from {
+    transform: rotate(-45deg) ;
+  }
+  to {transform: rotate(45deg);}
+} 
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {
+    transform: rotate(0deg) 
+  }
+  to {
+    transform: rotate(-45deg) translate(20px, -25px);
+  }
 }
